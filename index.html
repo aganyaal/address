@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js">
+  </script>
+  <title>Address Book</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Address Book</h1>
+
+    <div class="jumbotron row">
+      <div class="col-md-6">
+        <h2>Add a contact</h2>
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-first-name">First name</label>
+            <input type="text" class="form-control" id="new-first-name">
+
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+
+          </div>
+          <div class="form-group">
+            <label for="new-phone-number">Phone Number</label>
+            <input type="number" class="form-control" id="new-phone-number">
+
+          </div>
+          <button type="submit" class="btn">ADD</button>
+        </form>
+
+        <h2>Contacts:</h2>
+        <ul id="contacts">
+
+        </ul>
+
+      </div>
+      <div class="col-md-6">
+        <div id="show-contact">
+          <h1><strong>Details</strong></h1>
+          <h2></h2>
+
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>Phone Number:<span class="phone-number"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
