@@ -21,23 +21,41 @@
     <div class="jumbotron row">
       <div class="col-md-6">
         <h2>Add a contact</h2>
-        <form id="new-contact">
-          <div class="form-group">
-            <label for="new-first-name">First name</label>
-            <input type="text" class="form-control" id="new-first-name">
+        <div id="details">
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
 
-          </div>
-          <div class="form-group">
-            <label for="new-last-name">Last name</label>
-            <input type="text" class="form-control" id="new-last-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
 
-          </div>
-          <div class="form-group">
-            <label for="new-phone-number">Phone Number</label>
-            <input type="number" class="form-control" id="new-phone-number">
+            </div>
+            <div class="form-group">
+              <label for="new-phone-number">Phone Number</label>
+              <input type="number" class="form-control" id="new-phone-number">
 
-          </div>
-          <button type="submit" class="btn">ADD</button>
+            </div>
+            <div id="form-wrapper">
+              <div class="new-address">
+
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control" id="new-city">
+
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State/Province</label>
+                  <input type="text" class="form-control" id="new-state">
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- END OF FORM DIV -->
+        <button type="button" id="address-sect" class="btn">ADD ADDRESS</button>
+        <button type="submit" class="btn">ADD</button>
         </form>
 
         <h2>Contacts:</h2>
@@ -54,10 +72,18 @@
           <p>First name: <span class="first-name"></span></p>
           <p>Last name: <span class="last-name"></span></p>
           <p>Phone Number:<span class="phone-number"></span></p>
+          <p>Addresses:</p>
+          <ul id="addresses">
+
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </body>
+
+</html>
+
+</html>
 
 </html>
